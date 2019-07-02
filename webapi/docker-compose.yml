@@ -1,0 +1,16 @@
+version: '3'
+
+services: 
+
+  devapi: 
+    image: node:10.12.0
+    volumes:
+      - .:/usr/src/service
+    working_dir: /usr/src/service
+    command: npm start
+
+    # Before Running with Docker Compose
+    # docker-compose -f docker-compose.builder.yml run --rm install
+
+    # Run with Docker Compose command
+    # docker-compose up
