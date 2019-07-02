@@ -1,0 +1,9 @@
+version: '3'
+
+services: 
+  web-api: 
+    build: ./webapi
+    volumes: 
+      # - ./api:/Users/dawimuhammad/github/dawimuhammad/dcpg/api
+    ports:
+      - "5001:80"
